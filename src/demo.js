@@ -1,5 +1,5 @@
 module.exports = {
-  'Demo test Google' : function (client) {
+  'Test login Autobits' : function (client) {
     client
     .url('http://suite.autobits.com.co')
     .waitForElementVisible('button', 1000)
@@ -12,9 +12,17 @@ module.exports = {
     .click('.btn')
     .pause(1000)
     .waitForElementVisible('.navbar-right', 1000)
-    .assert.title('Inicio')
+    .waitForElementVisible('h1', 1000)
+    .assert.containsText("h1", "Bienvenido")
+    .waitForElementVisible('ul.nav li.has-sub ',1000) //
+    .waitForElementVisible('a[href=#/32640/reservas/listar/todos//]',1000)
+  //.useXpath()
+    //.waitForElementVisible('a[@href="#/32640/reservas/listar/todos//"]',1000)
+    //.waitForElementVisible('//ul[contains(@class, "nav")]//li[contains(@class, "has-sub")]//a//i',1000)
+  //  .waitForElementVisible('ul.nav li.has-sub a i[4]', 1000)
+    //.assert.containsText('//ul[contains(@class, "nav")]//li[contains(@class, "has-sub")]//a//i and text() = "Reserva"', "Reserva")
     //.assert.containsText('ol#rso li:first-child',
-    //'Rembrandt - Wikipedia')
+
     .end();
   }
 };

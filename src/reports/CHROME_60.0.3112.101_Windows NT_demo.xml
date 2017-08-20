@@ -5,9 +5,27 @@
 
   <testsuite name="demo"
     errors="0" failures="1" hostname="" id="" package="demo" skipped="0"
-    tests="1" time="121.7" timestamp="Fri, 18 Aug 2017 03:55:46 GMT">
+    tests="1" time="21.00" timestamp="Sun, 20 Aug 2017 19:54:44 GMT">
   
-    <testcase name="Demo test Google" classname="demo" time="121.7" assertions="1">  <failure message="Timed out while waiting for element &lt;button&gt; to be present for 1500 milliseconds.">    at Object.Demo test Google (C:\Users\Katherine\Documents\NW Demo\src\demo.js:5:6)
+    <testcase name="Test login Autobits" classname="demo" time="21.00" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;a[href=#/32640/reservas/listar/todos//]&gt; to be present for 1000 milliseconds.">    at Object.Test login Autobits (C:\Users\Katherine\Documents\Repositorio-Katherine\NW_Demo\src\demo.js:18:6)
     at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure>
 
     
