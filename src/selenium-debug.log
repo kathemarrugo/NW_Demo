@@ -1,0 +1,65 @@
+22:12:05.456 INFO - Selenium build info: version: '3.5.0', revision: '8def36e068'
+22:12:05.457 INFO - Launching a standalone Selenium Server
+2017-08-16 22:12:05.490:INFO::main: Logging initialized @399ms to org.seleniumhq.jetty9.util.log.StdErrLog
+22:12:05.568 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+22:12:05.606 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
+22:12:05.661 INFO - Using the passthrough mode handler
+2017-08-16 22:12:05.706:INFO:osjs.Server:main: jetty-9.4.5.v20170502
+2017-08-16 22:12:05.770:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@3108bc{/,null,STARTING} has uncovered http methods for path: /
+2017-08-16 22:12:05.777:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@3108bc{/,null,AVAILABLE}
+2017-08-16 22:12:06.015:INFO:osjs.AbstractConnector:main: Started ServerConnector@68dc6b36{HTTP/1.1,[http/1.1]}{0.0.0.0:4446}
+2017-08-16 22:12:06.016:INFO:osjs.Server:main: Started @926ms
+22:12:06.016 INFO - Selenium Server is up and running
+2017-08-16 22:12:06.317:INFO:osjshC.ROOT:qtp2104457164-11: org.openqa.selenium.remote.server.WebDriverServlet-55f3ddb1: Initialising WebDriverServlet
+22:12:06.399 INFO - Binding default provider to: org.openqa.selenium.chrome.ChromeDriverService
+22:12:06.400 INFO - Found handler: org.openqa.selenium.remote.server.BeginSession@253aa127
+22:12:06.410 INFO - /session: Executing POST on /session (handler: BeginSession)
+22:12:06.446 INFO - Capabilities are: Capabilities {acceptSslCerts=true, marionette=true, name=Demo, browserName=firefox, javascriptEnabled=true, platformName=ANY, platform=ANY, }
+22:12:06.448 INFO - Capabilities {acceptSslCerts=true, marionette=true, name=Demo, browserName=firefox, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+22:12:06.449 INFO - Capabilities {acceptSslCerts=true, marionette=true, name=Demo, browserName=firefox, javascriptEnabled=true, platformName=ANY, platform=ANY, } matched class org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+2017-08-16 22:12:06.481:WARN:osjs.HttpChannel:qtp2104457164-11: /wd/hub/session
+java.lang.NullPointerException
+	at com.google.gson.JsonPrimitive.isPrimitiveOrString(JsonPrimitive.java:278)
+	at com.google.gson.JsonPrimitive.setValue(JsonPrimitive.java:101)
+	at com.google.gson.JsonPrimitive.<init>(JsonPrimitive.java:65)
+	at org.openqa.selenium.remote.server.ExceptionHandler.lambda$execute$0(ExceptionHandler.java:82)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.server.ExceptionHandler.execute(ExceptionHandler.java:88)
+	at org.openqa.selenium.remote.server.WebDriverServlet.handle(WebDriverServlet.java:247)
+	at org.openqa.selenium.remote.server.WebDriverServlet.doPost(WebDriverServlet.java:151)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.openqa.selenium.remote.server.WebDriverServlet.service(WebDriverServlet.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:564)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:110)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.seleniumhq.jetty9.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Unknown Source)

@@ -1,0 +1,4 @@
+iniciar selenium
+java -jar selenium-server-standalone-{VERSION}.jar
+
+nightwatch -t demo.js
