@@ -16,7 +16,7 @@ module.exports = {
     .assert.containsText("h1", "Bienvenido")
     .waitForElementVisible('ul.nav li.has-sub ',1000) //
     .waitForElementVisible('a[href=#/32640/reservas/listar/todos//]',1000)
-  //.useXpath()
+ .useXpath()
     //.waitForElementVisible('a[@href="#/32640/reservas/listar/todos//"]',1000)
     //.waitForElementVisible('//ul[contains(@class, "nav")]//li[contains(@class, "has-sub")]//a//i',1000)
   //  .waitForElementVisible('ul.nav li.has-sub a i[4]', 1000)
