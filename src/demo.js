@@ -15,7 +15,17 @@ module.exports = {
     .waitForElementVisible('h1', 1000)
     .assert.containsText("h1", "Bienvenido")
     .waitForElementVisible('ul.nav li.has-sub ',1000) //
-    .waitForElementVisible('a[href=#/32640/reservas/listar/todos//]',1000)
+    .assert.containsText('ul.nav li.has-sub:nth-child(4) a span','Reservas')
+    .click('ul.nav li.has-sub:nth-child(4) a')
+    .pause(1000)
+    .waitForElementVisible('h1.page-header',1000)
+    .assert.containsText('h1.page-header', 'Reserva')
+    .click('div.btn-group a.btn.btn-success.p-l-40.p-r-40.btn-sm.m-r-10')
+    .pause(1000)
+    .waitForElementVisible('h3.modal-title.panel-title',1000)
+    //.expect.element('div.row > div.columns:first-child > h2 > i').text.to.be.equal('Hello');
+
+    //.getAttribute('a[href=#/32640/reservas/listar/todos//]',1000)
   //.useXpath()
     //.waitForElementVisible('a[@href="#/32640/reservas/listar/todos//"]',1000)
     //.waitForElementVisible('//ul[contains(@class, "nav")]//li[contains(@class, "has-sub")]//a//i',1000)

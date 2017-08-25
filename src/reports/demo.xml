@@ -5,9 +5,9 @@
 
   <testsuite name="demo"
     errors="1" failures="0" hostname="" id="" package="demo" skipped="0"
-    tests="1" time="0.1990" timestamp="Sun, 20 Aug 2017 19:06:01 GMT">
+    tests="1" time="0.2690" timestamp="Fri, 25 Aug 2017 02:51:59 GMT">
   
-    <testcase name="Test login Autobits" classname="demo" time="0.1990" assertions="0">
+    <testcase name="Test login Autobits" classname="demo" time="0.2690" assertions="0">
     </testcase>
   
 
@@ -15,8 +15,8 @@
     <system-err>
         Error while running [Demo / Test login Autobits]:
 
-  TypeError: client.url(...).waitForElementVisible(...).assert.title(...).assert.visible(...).setValue(...).assert.visible(...).setValue(...).waitForElementVisible(...).click(...).pause(...).waitForElementVisible(...).waitForElementVisible(...).assert.containsText(...).useXPath is not a function
-    at Object.Test login Autobits (C:\Users\Katherine\Documents\Repositorio-Katherine\NW_Demo\src\demo.js:17:6)
+  ReferenceError: Reservas is not defined
+    at Object.Test login Autobits (C:\Users\Katherine\Documents\Repositorio-Katherine\NW_Demo\src\demo.js:18:59)
     at Module.call (C:\Users\Katherine\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\Katherine\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\Katherine\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
