@@ -15,6 +15,7 @@ module.exports = {
     .waitForElementVisible('h1', 1000)
     .assert.containsText("h1", "Bienvenido")
     .waitForElementVisible('ul.nav li.has-sub ',1000) //
+<<<<<<< .merge_file_a07344
     .assert.containsText('ul.nav li.has-sub:nth-child(4) a span','Reservas')
     .click('ul.nav li.has-sub:nth-child(4) a')
     .pause(1000)
@@ -27,6 +28,10 @@ module.exports = {
 
     //.getAttribute('a[href=#/32640/reservas/listar/todos//]',1000)
   //.useXpath()
+=======
+    .waitForElementVisible('a[href=#/32640/reservas/listar/todos//]',1000)
+ .useXpath()
+>>>>>>> .merge_file_a12860
     //.waitForElementVisible('a[@href="#/32640/reservas/listar/todos//"]',1000)
     //.waitForElementVisible('//ul[contains(@class, "nav")]//li[contains(@class, "has-sub")]//a//i',1000)
   //  .waitForElementVisible('ul.nav li.has-sub a i[4]', 1000)
